@@ -10,5 +10,24 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery.min
+//= require popper.min
+//= require perfect-scrollbar.jquery.min
+//= require moment.min.js
+//= require bootstrap-switch
+//= require sweetalert2.min
+//= require jquery.validate.min
+//= require jquery.bootstrap-wizard
+//= require bootstrap-selectpicker
+//= require bootstrap-datetimepicker
+//= require jquery.dataTables.min
+//= require bootstrap-tagsinput
+//= require jasny-bootstrap.min
+//= require fullcalendar.min
+//= require jquery-jvectormap
+//= require nouislider.min
+//= require bootstrap-notify
+//= require jquery-jvectormap
 //= require rails-ujs
+//= require turbolinks
 //= require_tree .
