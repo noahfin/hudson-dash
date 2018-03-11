@@ -8,7 +8,7 @@
             <div class="card card-login card-plain">
               <div class="card-header ">
                 <div class="logo-container text-center">
-                  <i id="icon" class="fa fa-cube" style="text-shadow: rgb(36, 36, 36) 0px 0px 0px, rgb(43, 43, 43) 1px 1px 0px; font-size: 92px; color: rgb(36, 58, 81); height: 139px; width: 139px; line-height: 139px; border-radius: 50%; text-align: center; background-color: rgb(51, 51, 51);"></i>
+                  <i id="icon" class="fa fa-database" style="text-shadow: rgb(36, 36, 36) 0px 0px 0px, rgb(43, 43, 43) 1px 1px 0px; font-size: 92px; color: rgb(36, 58, 81); height: 139px; width: 139px; line-height: 139px; border-radius: 50%; text-align: center; background-color: rgb(51, 51, 51);"></i>
                 </div>
                 <%= f.error_notification %>
               </div>
@@ -37,7 +37,7 @@
 
                 <div class="form-group white-text change-to-white">
                       <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
-                    <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+                    <%= link_to "Didn't receive a email?", new_confirmation_path(resource_name) %><br />
                   <% end -%>
                 </div>
               </div>
