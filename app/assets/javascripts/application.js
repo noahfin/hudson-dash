@@ -28,6 +28,6 @@
 //= require nouislider.min
 //= require bootstrap-notify
 //= require jquery-jvectormap
-//= require rails-ujs
+//= require now-ui-dashboard.min
 //= require turbolinks
 //= require_tree .
