@@ -30,7 +30,7 @@ min-width: 100%;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+
   margin: 0px !important;
   padding: 0px !important;
 }
@@ -40,6 +40,7 @@ min-width: 100%;
 }
 #login-outer{
   background: url('bg14.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .change-to-white a, #get-password {
