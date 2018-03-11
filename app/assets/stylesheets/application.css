@@ -56,3 +56,6 @@ body, html {
 .card .card-stats {
   background: transparent !important;
 }
+.card-less-width {
+  width: 98% !important;
+}
