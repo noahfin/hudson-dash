@@ -16,17 +16,17 @@
   </head>
   <body class=" sidebar-mini">
 
-    <main role="main">
+
 
         <%= render '/layouts/sidebar' unless current_page?(root_url) %>
 
         <%= render 'layouts/navigation'  unless current_page?(root_url) %>
-
+        <%= render 'layouts/messages'   %>
 
 
         <%= yield %>
-      </main>
-    </div>
+
+
   </body>
    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
 </html>
