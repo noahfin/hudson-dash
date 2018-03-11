@@ -15,13 +15,14 @@
  */
 @media only screen and (max-width: 600px) {
     .brand h1 {
-        font-size: 2.4rem !important;
+        font-size: 1.9rem !important;
+        font-weight: 400;
         margin: auto;
 
       }
      .brand { position: absolute;
        padding-top: .4rem;
-       top: -10rem;
+       top: -14rem;
 
 
     }
