@@ -21,9 +21,8 @@ body, html {
   padding: 0;
   background: #212121 !important;
   margin: 0px;
-
 }
-#login-outer, .full-image-landing {
+#login-outer, .page-header-image {
 min-height: 100%;
 min-width: 100%;
   min-height: 100vh;
@@ -34,9 +33,24 @@ min-width: 100%;
   margin: 0px !important;
   padding: 0px !important;
 }
-.page-header-image {
-  background: url('red1.jpg') no-repeat center center fixed;
+
+.layer {
+    background-color: rgba(105,105,105, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.landding-page{
+  background: url('gray1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+  min-height: 100vh;
 }
 #login-outer{
   background: url('bg14.jpg') no-repeat center center fixed;
@@ -66,4 +80,7 @@ min-width: 100%;
 }
 .card-less-width {
   width: 98% !important;
+}
+.white-text {
+  color: white !important;
 }
