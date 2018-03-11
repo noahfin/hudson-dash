@@ -14,91 +14,109 @@
  *= require_self
  */
 @media only screen and (max-width: 600px) {
-    .brand h1 {
-        font-size: 1.9rem !important;
-        font-weight: 400;
-        margin: auto;
-
-      }
-     .brand { position: absolute;
-       padding-top: .4rem;
-       top: -14rem;
-
-
+     .brand h1 {
+         font-size: 2.3rem !important;
+         font-weight: 400;
+         margin: auto;
     }
-    .inner-brand {
-      margin: auto;
-      text-align: center;
-
+    .brand h3 {
+      font-size: 1.1rem
     }
-    .layer {
-      padding-left: 10px;
+     .brand {
+         position: absolute;
+         padding-top: .4rem;
+         top: -14rem;
     }
-
-}
-.brand {
-padding-top: 22rem; color: white !important;
-}
-body, html {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  background: #212121 !important;
-  margin: 0px;
-}
-#login-outer, .page-header-image {
-min-height: 100%;
-min-width: 100%;
-  min-height: 100vh;
-  width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  margin: 0px !important;
-  padding: 0px !important;
+    }
+     .inner-brand {
+         margin: auto;
+         text-align: center;
+    }
+     .layer {
+         padding-left: 10px;
+    }
 }
 
-.layer {
-    background-color: rgba(36, 58, 81, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+ #brand-id {
+     padding-top: 22rem !important;
+     color: white !important;
 }
+ body, html {
+     height: 100%;
+     width: 100%;
+     padding: 0;
+     background: #212121 !important;
+     margin: 0px;
+}
+ #login-outer, .page-header-image {
+     min-height: 100%;
+     min-width: 100%;
+     min-height: 100vh;
+     width: 100vw;
+     background-position: center;
+     background-repeat: no-repeat;
+     margin: 0px !important;
+     padding: 0px !important;
+}
+ .layer {
+     background-color: rgba(36, 58, 81, 0.5);
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+ .landding-page{
+     background: url('blue1.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+     min-height: 100%;
+     min-height: 100vh;
+}
+ #login-outer{
+     background: url('bg14.jpg') no-repeat center center fixed;
+     background-size: cover;
+}
+ .change-to-white a, #get-password {
+     color: white !important;
+}
+ .text-center {
+     text-align: center !important;
 
-.landding-page{
-  background: url('gray1.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  min-height: 100%;
-  min-height: 100vh;
 }
-#login-outer{
-  background: url('bg14.jpg') no-repeat center center fixed;
-  background-size: cover;
+ .top-header {
+     margin-top: 90PX;
 }
-
-.change-to-white a, #get-password {
-  color: white !important;
+ .card .card-stats {
+     background: transparent !important;
 }
-
-
-.text-center {
-  text-align: center;;
+ .card-less-width {
+     width: 98% !important;
 }
-.top-header {
-  margin-top: 90PX;
+ .white-text {
+     color: white !important;
 }
-
-.card .card-stats {
-  background: transparent !important;
+#error_explanation {
+  text-align: center;
+  margin: auto;
+  padding-left: 0px;
+  margin-top: 1rem;
 }
-.card-less-width {
-  width: 98% !important;
+#error_explanation h2{
+  font-size: 1rem;
+   margin-bottom: .3rem;
 }
-.white-text {
-  color: white !important;
+#error_explanation ul{
+  padding-left: 0px;
+  margin: auto;
+  list-style: none;
+  margin-bottom: .3rem;
 }
+#error_explanation li{
+  padding-left: 0px;
+  }
+  .checkbox label .boolean {
+    padding-right: 8px;
+  }
