@@ -16,9 +16,28 @@
 @media only screen and (max-width: 600px) {
     .brand h1 {
         font-size: 1.7rem !important;
-    }
-}
+        margin: auto;
 
+      }
+     .brand { position: absolute;
+       padding-top: .4rem;
+       top: -10rem;
+       padding-left: 1rem;
+
+    }
+    .inner-brand {
+      margin: auto;
+      text-align: center;
+
+    }
+    .layer {
+      padding-left: 10px;
+    }
+
+}
+.brand {
+padding-top: 22rem; color: white !important;
+}
 body, html {
   height: 100%;
   width: 100%;
@@ -65,13 +84,7 @@ min-width: 100%;
   color: white !important;
 }
 
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
 
-  display: flex;
-  align-items: center;
-}
 .text-center {
   text-align: center;;
 }
