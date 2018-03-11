@@ -29,6 +29,7 @@ gem 'bourbon'
 gem 'devise'
 gem 'devise_invitable'
 gem 'simple_form'
+gem 'pundit'
 gem 'unicorn'
 gem 'unicorn-rails'
 group :development do
