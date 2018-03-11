@@ -31,3 +31,16 @@
 //= require now-ui-dashboard.min
 //= require turbolinks
 //= require_tree .
+
+jQuery(document).ready(function($) {
+  $( ".layer" ).click(function() {
+  $('#sign_up').trigger("click");
+});
+
+
+
+    $("#sign_up" ).hover(function() {
+  $(".layer" ).hide;
+});
+
+});

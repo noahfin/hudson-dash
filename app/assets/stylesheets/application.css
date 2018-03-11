@@ -13,7 +13,11 @@
  *= require_tree .
  *= require_self
  */
-
+@media only screen and (max-width: 600px) {
+    .brand h1 {
+        font-size: 1.7rem !important;
+    }
+}
 
 body, html {
   height: 100%;
@@ -35,7 +39,7 @@ min-width: 100%;
 }
 
 .layer {
-    background-color: rgba(105,105,105, 0.3);
+    background-color: rgba(36, 58, 81, 0.5);
     position: absolute;
     top: 0;
     left: 0;
