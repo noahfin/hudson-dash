@@ -1,0 +1,76 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @contact.first_name %>
+  </p>
+
+  <p>
+    <strong>Prefix:</strong>
+    <%= @contact.Prefix %>
+  </p>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @contact.first_name %>
+  </p>
+
+  <p>
+    <strong>Middle initial:</strong>
+    <%= @contact.middle_initial %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @contact.last_name %>
+  </p>
+
+  <p>
+    <strong>Suffix:</strong>
+    <%= @contact.suffix %>
+  </p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= @contact.title %>
+  </p>
+
+  <p>
+    <strong>Business email:</strong>
+    <%= @contact.business_email %>
+  </p>
+
+  <p>
+    <strong>Personal email:</strong>
+    <%= @contact.personal_email %>
+  </p>
+
+  <p>
+    <strong>Add email:</strong>
+    <%= @contact.add_email %>
+  </p>
+
+  <p>
+    <strong>Shared:</strong>
+    <%= @contact.shared %>
+  </p>
+
+  <p>
+    <strong>Phone 1:</strong>
+    <%= @contact.phone_1 %>
+  </p>
+
+  <p>
+    <strong>Phone 2:</strong>
+    <%= @contact.Phone_2 %>
+  </p>
+
+  <p>
+    <strong>Comments:</strong>
+    <%= @contact.comments %>
+  </p>
+
+  <%= link_to 'Edit', edit_contact_path(@contact) %> |
+  <%= link_to 'Back', contacts_path %>
+</div>

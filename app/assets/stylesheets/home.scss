@@ -1716,18 +1716,18 @@ body.swal2-iosfix {
   .card-wizard[data-color="green"] .radio input[type=radio]:checked ~ .circle {
     border-color: #18ce0f; }
   .card-wizard[data-color="blue"] .moving-tab {
-    color: #2CA8FF; }
+    color: #1C2331; }
   .card-wizard[data-color="blue"] .picture:hover {
-    border-color: #2CA8FF; }
+    border-color: #1C2331; }
   .card-wizard[data-color="blue"] .choice:hover .icon, .card-wizard[data-color="blue"] .choice.active .icon {
-    border-color: #2CA8FF;
+    border-color: #1C2331;
     color: #2CA8FF; }
   .card-wizard[data-color="blue"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
-    background-color: #2CA8FF; }
+    background-color: #1C2331;; }
   .card-wizard[data-color="blue"] .radio input[type=radio]:checked ~ .check {
-    background-color: #2CA8FF; }
+    background-color: #1C2331; }
   .card-wizard[data-color="blue"] .radio input[type=radio]:checked ~ .circle {
-    border-color: #2CA8FF; }
+    border-color: #1C2331; }
   .card-wizard[data-color="orange"] .moving-tab {
     color: #FFB236; }
   .card-wizard[data-color="orange"] .picture:hover {
@@ -8558,7 +8558,7 @@ Created using IcoMoon - icomoon.io
   .sidebar .logo,
   .off-canvas-sidebar .logo {
     position: relative;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0rem 0.5rem;
     z-index: 4; }
     .sidebar .logo a.logo-mini,
     .off-canvas-sidebar .logo a.logo-mini {
@@ -10180,7 +10180,14 @@ Created using IcoMoon - icomoon.io
   background-color: #e95e38; }
 
 [data-background-color="black"] {
-  background-color: #484848; }
+  background-color: #343a40; }
+
+  [data-background-color="blue"] {
+  background-color: #243a51; }
+  [data-background-color="mdb-black"] {
+  background-color: #212121 }
+
+
 
 [data-background-color]:not([data-background-color="gray"]) {
   color: #FFFFFF; }

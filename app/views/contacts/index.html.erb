@@ -1,0 +1,58 @@
+
+<div class="container-fluid">
+
+
+  <p id="notice"><%= notice %></p>
+
+  <h1>Contacts</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Prefix</th>
+        <th>First name</th>
+        <th>Middle initial</th>
+        <th>Last name</th>
+        <th>Suffix</th>
+        <th>Title</th>
+        <th>Business email</th>
+        <th>Personal email</th>
+        <th>Add email</th>
+        <th>Shared</th>
+        <th>Phone 1</th>
+        <th>Phone 2</th>
+        <th>Comments</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @contacts.each do |contact| %>
+        <tr>
+          <td><%= contact.first_name %></td>
+          <td><%= contact.Prefix %></td>
+          <td><%= contact.first_name %></td>
+          <td><%= contact.middle_initial %></td>
+          <td><%= contact.last_name %></td>
+          <td><%= contact.suffix %></td>
+          <td><%= contact.title %></td>
+          <td><%= contact.business_email %></td>
+          <td><%= contact.personal_email %></td>
+          <td><%= contact.add_email %></td>
+          <td><%= contact.shared %></td>
+          <td><%= contact.phone_1 %></td>
+          <td><%= contact.Phone_2 %></td>
+          <td><%= contact.comments %></td>
+          <td><%= link_to 'Show', contact %></td>
+          <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+          <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Contact', new_contact_path %>
+</div>

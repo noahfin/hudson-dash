@@ -1,6 +1,6 @@
  <div class="main-panel">
       <!-- Navbar -->
-      <nav class="navbar navbar navbar-expand-md navbar-dark bg-dark navbar-absolute  fixed-top">
+      <nav class="navbar navbar navbar-expand-md navbar-dark navbar-absolute  fixed-top" data-background-color="black"  style="  border-bottom: 4px solid rgba(36, 58, 81, 1); border-top: 4px solid rgba(36, 58, 81, 1);">
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <div class="navbar-toggle">
@@ -36,7 +36,7 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="now-ui-icons location_world"></i>
                   <p>
                     <span class="d-lg-none d-md-block">User links</span>
@@ -47,12 +47,13 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pablo">
+                <a class="nav-link" href="#{current_user.id}">
                   <i class="now-ui-icons users_single-02"></i>
                   <p>
                     <span class="d-lg-none d-md-block">Account</span>
                   </p>
                 </a>
+
               </li>
             </ul>
           </div>
@@ -60,5 +61,6 @@
       </nav>
       <!-- End Navbar -->
 
-</div>
+
+
 

@@ -1,0 +1,139 @@
+<div class="card-body ">
+
+    <%= simple_form_for(@contact) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :first_name, class: 'input-full' %>
+
+            </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :Prefix, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :first_name, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :middle_initial, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :last_name, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :suffix, class: '' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :title, class: '' %>
+              </div>
+               <div class="col-md-10">
+                  <button type="submit" class="btn  btn-round btn-block ml-0 mr-0 btn-primary" style="width: 100% !important;">Submit</button>
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+          <div class="col-md-6">
+            <div class="row mb-2">
+
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :business_email, class: ' input-full' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :personal_email, class: '' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+               <%= f.input :add_email, class: '' %>
+               </div>
+            </div>
+
+
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+              <%= f.input :phone_1, class: '' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+               <%= f.input :Phone_2, class: '' %>
+               </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+
+                <label class="label-white">Comments</label>
+
+               <textarea class=" " name="contact[comments]" id="contact_comments" style=" min-width: 100%; min-height: 120px;"></textarea>
+               </div>
+
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10 shrared-check">
+
+              <div class="form-check form-check-radio form-checkbox "><label class="label-white"><input value="0" type="hidden" name="contact[shared]" ><input class="boolean optional form-radio-buttons form-check-input" type="radio" value="1" name="contact[shared]" id="contact_shared"><span class="form-check-sign"> &nbsp; &nbsp;shared?</span></label></div>
+
+
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+   </div>
+
+   <% end %>
+
+
+
+  </div>
+
+

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
 
+  resources :tasks
+  resources :companies
+  resources :contacts
   get 'dashbord/index'
 
   namespace :admin do
@@ -9,9 +12,13 @@ Rails.application.routes.draw do
   end
 
   root to: 'visitors#index'
-  devise_for :users
-  resources :users
-   get "/:page" => "pages#show"
 
+
+
+   get "/:page" => "pages#show"
+   get '/home' => "pages#home", as: :user_root
+
+
+ devise_for :users
 end
 

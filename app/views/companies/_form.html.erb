@@ -1,0 +1,139 @@
+
+<div class="card-body ">
+
+    <%= simple_form_for(@company) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :name, class: 'form-control input-full' %>
+
+            </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :fax, class: 'form-control' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :industry, class: 'form-control' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :sic_code, class: 'form-control' %>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :source_of_name, class: 'form-control' %>
+              </div>
+               <div class="col-md-10">
+                  <button type="submit" class="btn col-md-6 btn-round ml-0 mr-0 btn-primary">Submit</button>
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+          <div class="col-md-6">
+            <div class="row mb-2">
+
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :suite, class: 'form-control input-full' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :total_employees, class: 'form-control' %>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+               <%= f.input :location_requirements, class: 'form-control' %>
+               </div>
+            </div>
+
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <%= f.input :year_founded, class: 'form-control' %>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+
+
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[data_checked]"><label class="boolean optional form-check-labe" for="data_checked"><input class="boolean optional" class="form-check-input" type="radio" value="1" name="company[data_checked]" id="data_checked"><span class="form-check-sign"> &nbsp; &nbsp;</span>Data Checked</label></div>
+
+
+               </div>
+
+
+            </div>
+             <div class="row mb-2">
+              <div class="col-md-10">
+
+             <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[exclussive]"><label class="boolean optional form-check-labe" for="exclussive"><input class="boolean optional" class="form-check-input" type="radio" value="1" name="company[exclussive]" id="exclussive"><span class="form-check-sign"> &nbsp; &nbsp;</span>Exclussive?</label></div>
+
+               </div>
+            </div>
+             <div class="row mb-2">
+              <div class="col-md-10">
+
+              <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[active]"><label class="boolean optional form-check-labe" for="active"><input class="boolean optional" class="form-check-input" type="radio" value="1" name="company[active]" id="active"><span class="form-check-sign"> &nbsp; &nbsp;</span>Active?</label></div>
+
+               </div>
+            </div>
+
+            </div>
+
+              <div class="col-md-6">
+
+
+              <div class="row mb-2">
+              <div class="col-md-10">
+             <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[owns]"><label class="boolean optional form-check-labe" for="owns"><input class="boolean optional" class="form-check-input" type="radio" value="1" name="company[owns]" id="owns"><span class="form-check-sign"> &nbsp; &nbsp;</span>Owns?</label></div>
+
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-10">
+              <div class="form-check form-check-radio"><input value="0" type="hidden" name="company[rents]"><label class="boolean optional form-check-labe" for="rents"><input class="boolean optional" class="form-check-input" type="radio" value="1" name="company[rents]" id="rents"><span class="form-check-sign"> &nbsp; &nbsp;</span>Rents?</label></div>
+              </div>
+            </div>
+
+            </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+   </div>
+
+   <% end %>
+
+
+
+
+
+

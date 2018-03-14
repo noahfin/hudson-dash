@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @company.phone %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @company.fax %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @company.website %>
+</p>
+
+<p>
+  <strong>Owns:</strong>
+  <%= @company.owns %>
+</p>
+
+<p>
+  <strong>Rents:</strong>
+  <%= @company.rents %>
+</p>
+
+<p>
+  <strong>Industry:</strong>
+  <%= @company.industry %>
+</p>
+
+<p>
+  <strong>Sf using:</strong>
+  <%= @company.SF_using %>
+</p>
+
+<p>
+  <strong>Sic code:</strong>
+  <%= @company.sic_code %>
+</p>
+
+<p>
+  <strong>Source of name:</strong>
+  <%= @company.source_of_name %>
+</p>
+
+<p>
+  <strong>Suite:</strong>
+  <%= @company.suite %>
+</p>
+
+<p>
+  <strong>Total employees:</strong>
+  <%= @company.total_employees %>
+</p>
+
+<p>
+  <strong>Location requirements:</strong>
+  <%= @company.location_requirements %>
+</p>
+
+<p>
+  <strong>Year founded:</strong>
+  <%= @company.year_founded %>
+</p>
+
+<p>
+  <strong>Data checked:</strong>
+  <%= @company.data_checked %>
+</p>
+
+<p>
+  <strong>Exclussive:</strong>
+  <%= @company.exclussive %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @company.active %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

@@ -10,7 +10,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180310180503) do
+ActiveRecord::Schema.define(version: 20180314013713) do
+
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+    t.string "phone"
+    t.string "fax"
+    t.string "website"
+    t.boolean "owns"
+    t.boolean "rents"
+    t.string "industry"
+    t.string "SF_using"
+    t.string "sic_code"
+    t.string "source_of_name"
+    t.string "suite"
+    t.integer "total_employees"
+    t.string "location_requirements"
+    t.string "year_founded"
+    t.boolean "data_checked"
+    t.boolean "exclussive"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string "Prefix"
+    t.string "first_name"
+    t.string "middle_initial"
+    t.string "last_name"
+    t.string "suffix"
+    t.string "title"
+    t.string "business_email"
+    t.string "personal_email"
+    t.string "add_email"
+    t.boolean "shared"
+    t.string "phone_1"
+    t.string "Phone_2"
+    t.text "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.boolean "finished"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

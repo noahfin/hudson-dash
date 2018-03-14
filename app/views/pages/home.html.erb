@@ -1,10 +1,11 @@
 <div class="top-header">
-
+ <%= render 'layouts/messages' %>
 </div>
       <div class="container-fluid">
+
         <div class="row">
           <div class="col-lg-3 col-sm-6">
-            <div class="card card-stats rounded-0" data-background-color="black">
+            <div class="card card-stats rounded-0" data-background-color="black" style=" box-shadow: 0px 3px 2px -2px rgba(249, 99, 50, 0.5)">
               <div class="card-body  bg-faded" >
                 <div class="statistics statistics-horizontal">
                   <div class="info info-horizontal">
@@ -31,7 +32,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="card card-stats rounded-0" data-background-color="black">
+            <div class="card card-stats rounded-0" data-background-color="black" data-background-color="black" style=" box-shadow: 0px 3px 2px -2px rgba(255, 178, 54, .5)">
               <div class="card-body  bg-faded" >
                 <div class="statistics statistics-horizontal">
                   <div class="info info-horizontal">
@@ -59,7 +60,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="card card-stats rounded-0" data-background-color="black">
+            <div class="card card-stats rounded-0" data-background-color="black" style="box-shadow: 0px 3px 2px -2px rgba(255, 54, 54, 0.5)">
               <div class="card-body bg-faded" >
                 <div class="statistics statistics-horizontal">
                   <div class="info info-horizontal">
@@ -86,7 +87,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="card card-stats rounded-0" data-background-color="black">
+            <div class="card card-stats rounded-0" data-background-color="black" style="box-shadow: 0px 3px 2px -2px rgba(44, 168, 255, 0.5)">
               <div class="card-body bg-faded">
                 <div class="statistics statistics-horizontal">
                   <div class="info info-horizontal">
@@ -113,24 +114,50 @@
             </div>
           </div>
         </div>
+      </div>
+
+
+      <div class ="container-fluid   main-container">
+        <div class="nav-tabs" data-background-color="black">
+
+        </div>
+
+
+
+                <div class="row ">
 
 
 
 
+                <div class="col-md-6 pr-3  col-rezie ">
+              <div class="card card-tasks rounded-0 card-less-width" data-background-color="black"  style="  border: solid rgba(36, 58, 81, .4); box-shadow: 0px 3px 2px -2px rgba(36, 58, 81, .5)">
+              <div class="card-header">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><h5 class="card-category">Backend development</h5></li>
 
-              <div class ="container-fluid pl-0">
-                <div class="row no-gutters ml-0">
+                    <ul class="list-inline float-right ">
+                      <li class="list-inline-item"><a href="#">Add </a><span> | </span><a href="#">Finshed</a><span> | </span><a href="#">Personal</a><span></li>
+                      <li class="list-inline-item "><div class="btn-group mt-0 pt-0">
+                      <button type="button" class="btn btn-primary dropdown-toggle mt-0  p-1 rounded-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-tasks"></i>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div></li>
+                    </ul>
 
 
 
+                </ul>
 
-                <div class="col-md-6 no-gutters ">
-              <div class="card ml-0 card-tasks rounded-0 card-less-width" data-background-color="black" >
-              <div class="card-header ">
-                <h5 class="card-category">Backend development</h5>
-                <h4 class="card-title">Tasks</h4>
+                <h4 class="card-title " style="color: #CC0000!important;">Tasks</h4>
               </div>
-              <div class="card-body ml-0 ">
+              <div class="card-body ml-0 white-text">
                 <div class="table-full-width table-responsive">
                   <table class="table">
                     <tbody>
@@ -221,7 +248,17 @@
 
 
              </div>
-           </div>
 
-        </div>
-        </div>
+
+
+                              <div class="col-md-6  col-rezie">
+
+                                 <%= render 'pages/contacts' %>
+
+
+
+                                   </div>
+                                </div>
+                              </div>
+
+
