@@ -1,59 +1,61 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <p id="notice"><%= notice %></p>
 
-<h1>Companies</h1>
+  <h1 class="">Companies</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Phone</th>
-      <th>Fax</th>
-      <th>Website</th>
-      <th>Owns</th>
-      <th>Rents</th>
-      <th>Industry</th>
-      <th>Sf using</th>
-      <th>Sic code</th>
-      <th>Source of name</th>
-      <th>Suite</th>
-      <th>Total employees</th>
-      <th>Location requirements</th>
-      <th>Year founded</th>
-      <th>Data checked</th>
-      <th>Exclussive</th>
-      <th>Active</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @companies.each do |company| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= company.name %></td>
-        <td><%= company.phone %></td>
-        <td><%= company.fax %></td>
-        <td><%= company.website %></td>
-        <td><%= company.owns %></td>
-        <td><%= company.rents %></td>
-        <td><%= company.industry %></td>
-        <td><%= company.SF_using %></td>
-        <td><%= company.sic_code %></td>
-        <td><%= company.source_of_name %></td>
-        <td><%= company.suite %></td>
-        <td><%= company.total_employees %></td>
-        <td><%= company.location_requirements %></td>
-        <td><%= company.year_founded %></td>
-        <td><%= company.data_checked %></td>
-        <td><%= company.exclussive %></td>
-        <td><%= company.active %></td>
-        <td><%= link_to 'Show', company %></td>
-        <td><%= link_to 'Edit', edit_company_path(company) %></td>
-        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th class="pr-1">Name | </th>
+        <th class="pr-1">Phone | </th>
+        <th class="pr-1">Fax | </th>
+        <th class="pr-1">Website | </th>
+        <th class="pr-1">Owns | </th>
+        <th class="pr-1">Rents | </th>
+        <th class="pr-1">Industry | </th>
+        <th class="pr-1">Sf using | </th>
+        <th class="pr-1">Sic code | </th>
+        <th class="pr-1">Source of name | </th>
+        <th class="pr-1">Suite | </th>
+        <th class="pr-1">Total employees | </th>
+        <th class="pr-1">Location requirements | </th>
+        <th class="pr-1">Year founded | </th>
+        <th class="pr-1">Data checked | </th>
+        <th class="pr-1">Exclussive | </th>
+        <th class="pr-1">Active | </th>
+
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @companies.each do |company| %>
+        <tr>
+          <td class="pr-1"><%= company.name %></td>
+          <td class="pr-1"><%= company.phone %></td>
+          <td class="pr-1"><%= company.fax %></td>
+          <td class="pr-1"><%= company.website %></td>
+          <td class="pr-1"><%= company.owns %></td>
+          <td class="pr-1"><%= company.rents %></td>
+          <td class="pr-1"><%= company.industry %></td>
+          <td class="pr-1"><%= company.SF_using %></td>
+          <td class="pr-1"><%= company.sic_code %></td>
+          <td class="pr-1"><%= company.source_of_name %></td>
+          <td class="pr-1"><%= company.suite %></td>
+          <td class="pr-1"><%= company.total_employees %></td>
+          <td class="pr-1"><%= company.location_requirements %></td>
+          <td class="pr-1"><%= company.year_founded %></td>
+          <td class="pr-1"><%= company.data_checked %></td>
+          <td class="pr-1"><%= company.exclussive %></td>
+          <td class="pr-1"><%= company.active %></td>
+          <td class="pr-1"><%= link_to 'Show', company %></td>
+          <td class="pr-1"><%= link_to 'Edit', edit_company_path(company) %></td>
+          <td class="pr-1"><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Company', new_company_path %>
+  <br>
+
+  <%= link_to 'New Company', new_company_path %>
+</div>

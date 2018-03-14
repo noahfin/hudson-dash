@@ -29,6 +29,7 @@
 //= require bootstrap-notify
 //= require jquery-jvectormap
 //= require now-ui-dashboard.min
+//= require tasks
 //= require turbolinks
 //= require_tree .
 

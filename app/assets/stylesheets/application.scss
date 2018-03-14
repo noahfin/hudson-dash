@@ -43,6 +43,35 @@
      padding-top: 22rem !important;
      color: white !important;
 }
+.todo-task {
+    color: red;
+    cursor: pointer;
+}
+
+.is-completed {
+    color: green;
+}
+
+.save-button {
+    display: none;
+}
+
+.cancel-button {
+    display: none;
+}
+.edit-input {
+  width: 100%;
+  border: none;
+}
+#create-input {
+  height: 35px !important;
+  width: 270px;
+  border: none;
+  }
+
+
+
+
  body, html {
      height: 100%;
      width: 100%;
@@ -50,7 +79,10 @@
      padding: 0;
      background: #212121 !important;
      margin: 0px;
+     color: white !important;
 }
+
+
  #login-outer, .page-header-image {
      min-height: 100%;
      min-width: 100%;
@@ -160,6 +192,7 @@
 .orange-text{color: #FF8800 !important;}
 .grey-tex{color: #4B515D !important;}
 .black-text{color: #212121 !important;}
+.success {color: #18ce0f;}
 
 .margin-top {
   margin-top: 70px !important;
@@ -296,9 +329,9 @@
 .footer-distributed form input,
 .footer-distributed form textarea{
   display: block;
-  border-radius: 3px;
+  border-radius: 0px;
   box-sizing: border-box;
-  background-color:  #1f2022;
+  background-color:  #212121;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
   border: none;
   resize: none;
@@ -364,9 +397,7 @@ input[type=radio],
 .form-checkbox input{
     width: auto;
 }
-.form-mini .form-radio-buttons label span{
-    margin-left: 8px;
-}
+
 .form-check-sign {
   margin-left: 20px !important;
 }
@@ -421,4 +452,7 @@ input[type=radio],
     width: auto !important;
   }
 }
+}
+.main-task-h {
+  margin-top: -30px;
 }
